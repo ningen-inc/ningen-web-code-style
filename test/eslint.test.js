@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const { CLIEngine } = require('eslint');
 
 const cli = new CLIEngine({
