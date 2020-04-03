@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const stylelint = require('stylelint');
 
 // なんか時間がかかるから
