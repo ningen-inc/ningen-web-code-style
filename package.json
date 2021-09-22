@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "eslint": "eslint test/npm_scripts/**/*.es6",
-    "stylelint": "stylelint test/npm_scripts/**/*.scss",
+    "esformat": "prettier --write test/npm_scripts/**/*.es6",
+    "eslint": "eslint --fix test/npm_scripts/**/*.es6",
+    "stylelint": "stylelint --fix test/npm_scripts/**/*.scss",
+    "fix": "npm run esformat && npm run eslint && npm run stylelint",
     "test": "jest"
   },
   "keywords": [],
