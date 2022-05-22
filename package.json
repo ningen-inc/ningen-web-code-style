@@ -6,7 +6,7 @@
   "scripts": {
     "esformat": "prettier --write test/npm_scripts/**/*.es6",
     "eslint": "eslint --fix test/npm_scripts/**/*.es6",
-    "stylelint": "stylelint --fix test/npm_scripts/**/*.scss",
+    "stylelint": "stylelint  --formatter verbose --fix 'test/npm_scripts/**/*.scss'",
     "fix": "npm run esformat && npm run eslint && npm run stylelint",
     "test": "jest"
   },
@@ -20,7 +20,7 @@
     "eslint-plugin-import": "^2.24.2",
     "jest": "^27.2.1",
     "prettier": "^2.4.1",
-    "stylelint": "^14.8.3",
+    "stylelint": "^14.8.2",
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-twbs-bootstrap": "^3.0.1",
     "stylelint-prettier": "^2.0.0",
