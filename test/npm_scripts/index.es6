@@ -1,13 +1,10 @@
-
 class Foo {
   constructor() {
     this.a = 1;
   }
 
   // make error
-  methodUseThis() {
-
-  }
+  methodUseThis() {}
 }
 
 const foo = new Foo();
