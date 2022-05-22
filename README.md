@@ -8,6 +8,7 @@ npmのlint系ツールをvscodeから利用する。
 
 随時更新します。
 
+使用例は https://github.com/novogrammer/my_gulp_template を参照。
 
 test
 
