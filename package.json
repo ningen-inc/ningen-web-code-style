@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "esformat": "prettier --write test/npm_scripts/**/*.es6",
-    "eslint": "eslint --fix test/npm_scripts/**/*.es6",
-    "stylelint": "stylelint  --formatter verbose --fix 'test/npm_scripts/**/*.scss'",
+    "esformat": "prettier --write 'test/**/*.js' 'test/**/*.ts'",
+    "eslint": "eslint --fix 'test/**/*.js' 'test/**/*.ts'",
+    "stylelint": "stylelint  --formatter verbose --fix 'test/**/*.scss'",
     "fix": "npm run esformat && npm run eslint && npm run stylelint",
     "test": "jest"
   },
@@ -14,6 +14,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.6.0",
+    "@typescript-eslint/parser": "^5.6.0",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^8.3.0",
