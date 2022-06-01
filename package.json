@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "esformat": "prettier --write 'test/**/*.js' 'test/**/*.ts'",
-    "eslint": "eslint --fix 'test/**/*.js' 'test/**/*.ts'",
-    "stylelint": "stylelint  --formatter verbose --fix 'test/**/*.scss'",
-    "fix": "npm run esformat && npm run eslint && npm run stylelint",
+    "fix:esformat": "prettier --write 'test/**/*.js' 'test/**/*.ts'",
+    "fix:eslint": "eslint --fix 'test/**/*.js' 'test/**/*.ts'",
+    "fix:stylelint": "stylelint  --formatter verbose --fix 'test/**/*.scss'",
+    "fix": "npm-run-all --sequential fix:*",
     "test": "jest"
   },
   "keywords": [],
@@ -21,6 +21,7 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.24.2",
     "jest": "^27.2.1",
+    "npm-run-all": "^4.1.5",
     "prettier": "^2.4.1",
     "stylelint": "^14.8.2",
     "stylelint-config-prettier": "^9.0.3",
