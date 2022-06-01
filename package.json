@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "esformat": "prettier --write 'test/**/*.js'",
-    "eslint": "eslint --fix 'test/**/*.js'",
+    "esformat": "prettier --write 'test/**/*.js' 'test/**/*.ts'",
+    "eslint": "eslint --fix 'test/**/*.js' 'test/**/*.ts'",
     "stylelint": "stylelint  --formatter verbose --fix 'test/**/*.scss'",
     "fix": "npm run esformat && npm run eslint && npm run stylelint",
     "test": "jest"
